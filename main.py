@@ -15,8 +15,8 @@ find="to"
 result=re.findall(find,sentence)
 count=len(result)
 print(result,"The total <",find,"> is",count)
-# dummu added for pull
 
 
-gggg
+
+
 
