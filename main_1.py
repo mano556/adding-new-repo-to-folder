@@ -1,45 +1,68 @@
-# Print two tables
+# # Print two tables
 
-for x in range (1,11):
-    print(x,"x 2 =",x*9)
+# for x in range (1,11):
+#     print(x,"x 2 =",x*9)
 
-# print count of even numbers
-count=[]
-for x in range(1,11):
-    if (x%2 ==0):
-        count.append(x)
-print(len(count))
+# # print count of even numbers <Method-1>
+# count=[]
+# for x in range(1,11):
+#     if (x%2 ==0):
+#         count.append(x)
+# print(len(count))
 
+# # print count of even  & even numbers <Method-2>
+# even_count=0
+# odd_count =0
+# for x in range(1,11):
+#     if (x%2==0):
+#         even_count+=1
+#     else:
+#         odd_count+=1
+# print("Even : ",even_count)
+# print("Odd : ",odd_count)
 
-# swap two variable with temp
-a=77
-b=12
-temp=a
+# # print count of numbers which are divisible by 3 &5
+# count_3 = 0
+# count_5 = 0
+# count_3and5 = 0
 
-a=b
-b=temp
-print("value of a is ",a)
-print("value of b is ",b)
+# for x in range(1, 101):
+#     if (x % 3 == 0) and (x % 5 == 0):
+#         count_3and5 += 1
+#     elif (x % 3 == 0):
+#         count_3 += 1
+#     elif (x % 5 == 0):
+#         count_5 += 1
 
-#  swap two variable without temp using add sub
-a=int(input("Enter a value for a : "))
-b=int(input("Enter a value for b : "))
-a=a+b
-b=a-b
-a=a-b
+# print("3 divisible : ", count_3)
+# print("5 divisible : ", count_5)
+# print("Both 3 & 5 divisible : ", count_3and5)
 
-print("value of a is ",a)
-print("value of b is ",b)
+# # print sum of natural numbers from 1 to 5
+# sum=0
+# for x in range(1,6):
+#     sum+=x
+# print(sum)
 
-#  swap two variable without temp using xor operator
-a=int(input("Enter a value for a : "))
-b=int(input("Enter a value for b : "))
-a=a^b
-b=a^b
-a=a^b
+# # ask 10 input from user then sum then give average of inputs
+# a=[]
+# sum=0
+# for x in range(10):
+#     num=int(input("Enter the value of " + str(x+1)+" : "))
+#     a.append(num)
+# for i in a:
+#     sum+=i
+# result=sum/len(a)
+# print(result)
 
-print("value of a is ",a)
-print("value of b is ",b)
+# first 7 natural number
 
-
-
+# num=int(input("Enter the number : "))
+# print("first "+str(num)+" natural numbers : ")
+# for x in range(1,num+1):
+#    print(x)
+    
+# cube of an integer
+num=int(input("Enter the number : "))
+for x in range(1,num+1):
+    print("The cube of "+str(x)+" is "+str(x**3))
